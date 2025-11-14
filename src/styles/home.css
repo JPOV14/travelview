@@ -1,0 +1,423 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* -----------------------------------------
+   HEADER
+------------------------------------------ */
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container-header {
+  width: 90%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #d42b2b;
+}
+
+/* -----------------------------------------
+   HERO / BANNER PRINCIPAL
+------------------------------------------ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 35px;
+  border-radius: 10px;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+}
+
+/* === BUSCADOR – estilo compacto profesional === */
+
+.buscador {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -80px; /* efecto flotante sobre el banner */
+  margin-bottom: 40px;
+  z-index: 10;
+}
+
+.search-container {
+  width: 95%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.92); /* ligeramente transparente */
+  padding: 25px 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+}
+
+.search-container h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #0b4ab1;
+  font-weight: 700;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px 18px; /* menos espacio vertical */
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;       /* más compacto */
+  border-radius: 6px;      /* menos redondeo */
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.search-buttons {
+  grid-column: 1 / 6;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 5px;
+}
+
+/* Botón Buscar */
+.btn-buscar {
+  background: #1EA446;
+  border: none;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-buscar:hover {
+  background: #148a38;
+}
+
+/* Botón Limpiar */
+.btn-limpiar {
+  background: #ccc;
+  border: none;
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-limpiar:hover {
+  background: #b3b3b3;
+}
+
+
+
+/* -----------------------------------------
+   DESTINOS
+------------------------------------------ */
+.destinos {
+  padding: 40px 0;
+}
+
+.titulo-destinos {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color:#007bff; /* azul suave */;
+}
+
+.grid-destinos {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.destino-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 15px;
+  transition: 0.2s;
+}
+
+.destino-card:hover {
+  transform: translateY(-6px);
+}
+
+.destino-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destino-card h3 {
+  margin: 12px 0;
+  font-size: 20px;
+}
+
+.btn-ver {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #007bff; /* azul suave */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-ver:hover {
+  background: #0056b3;
+}
+
+
+/* -----------------------------------------
+   SECCIÓN PREGUNTAS
+------------------------------------------ */
+.pregunta {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.cta {
+  padding: 12px 20px;
+  background: #25d366;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: #1eb255;
+}
+
+/* -----------------------------------------
+   MÉTODOS DE PAGO
+------------------------------------------ */
+.metodos-pago {
+  padding: 40px 0;
+  background: #ffffff;
+}
+
+.pago {
+  text-align: center;
+}
+
+.metodos img {
+  width: 60px;
+  margin: 10px;
+}
+
+/* -----------------------------------------
+   FOOTER
+------------------------------------------ */
+.footer {
+  background: #222;
+  color: white;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 30%;
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+
+.footer-col h3 {
+  color: #fff;
+  border-bottom: 1px solid #555;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.certificaciones img,
+.social-icons img,
+.libro-img {
+  width: 60px;
+  margin: 6px;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  color: #ccc;
+}
+
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-list {
+  padding: 20px 0;
+}
+
+.destino-card {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.destino-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* === BUSCADOR RESTYLING === */
+
+.glass-card {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-buscador {
+  text-align: center;
+  color: #004AAD; /* azul bonito */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #003366;
+}
+
+.form-group input {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+.btns-buscador {
+  grid-column: span 5;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-buscar {
+  background-color: #00A859; /* verde bonito */
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-limpiar {
+  background-color: #d9534f;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-buscar:hover {
+  background-color: #008f4d;
+}
+
+.btn-limpiar:hover {
+  background-color: #c9302c;
+}

@@ -1,0 +1,80 @@
+.paq-container {
+  max-width: 1200px;
+  margin: 80px auto 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.paq-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.paq-subtitle {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.paq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.paq-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.25s;
+}
+
+.paq-card:hover {
+  transform: translateY(-5px);
+}
+
+.paq-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.paq-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.paq-desc {
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0 10px 0;
+}
+
+.paq-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.paq-precio {
+  font-weight: bold;
+  color: #0059ff;
+}
+
+.paq-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1e90ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.paq-btn:hover {
+  background: #0c6cc4;
+}
