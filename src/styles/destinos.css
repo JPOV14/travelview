@@ -1,0 +1,120 @@
+/* ================================
+   ESTILOS PARA PÁGINAS DE DESTINOS
+   ================================ */
+
+.destino-page {
+  width: 90%;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* HERO */
+.destino-hero {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.destino-hero h1 {
+  font-size: 32px;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.destino-hero .precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e7a39;
+}
+
+.btn-principal {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #1ea446;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-principal:hover {
+  background: #148a38;
+}
+
+/* GALERÍA */
+.galeria-principal {
+  margin-bottom: 40px;
+}
+
+.img-principal {
+  width: 100%;
+  border-radius: 12px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.galeria-secundaria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.galeria-secundaria img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CONTENIDO */
+.destino-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.destino-info h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #003366;
+}
+
+.destino-info ul {
+  padding-left: 18px;
+}
+
+.destino-info li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* BOTONES SECUNDARIOS */
+.destino-btns {
+  margin-top: 20px;
+}
+
+.btn-sec {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-sec:hover {
+  background: #0056b3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .destino-info {
+    grid-template-columns: 1fr;
+  }
+
+  .img-principal {
+    height: 250px;
+  }
+}

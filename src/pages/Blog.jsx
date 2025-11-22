@@ -1,12 +1,19 @@
-import React from "react";
+// src/pages/Blog.jsx
 import "./blog.css";
+
+import blog01Img from "../assets/img/blog01.jpg";
+import blog02Img from "../assets/img/blog02.jpg";
+import blog03Img from "../assets/img/blog03.jpg";
+import blog04Img from "../assets/img/blog04.jpg";
+import blog05Img from "../assets/img/blog05.jpg";
+// Si en alguno sale error de módulo, cambia SOLO ese .jpg por .png
 
 const blogData = [
   {
     id: 1,
     titulo: "5 destinos imperdibles para tu próximo viaje",
     categoria: "Inspiración",
-    img: "/img/blog01.jpg",
+    img: blog01Img,
     resumen:
       "Descubre los lugares que todo viajero debe visitar al menos una vez en la vida. Naturaleza, cultura y experiencias únicas.",
   },
@@ -14,7 +21,7 @@ const blogData = [
     id: 2,
     titulo: "Cómo encontrar vuelos baratos sin complicarte",
     categoria: "Tips de viaje",
-    img: "/img/blog02.jpg",
+    img: blog02Img,
     resumen:
       "Aprende a usar alertas, comparadores y estrategias para conseguir los mejores precios del mercado.",
   },
@@ -22,7 +29,7 @@ const blogData = [
     id: 3,
     titulo: "Viajar solo: una experiencia que te cambia la vida",
     categoria: "Inspiración",
-    img: "/img/blog03.jpg",
+    img: blog03Img,
     resumen:
       "Viajar solo no es estar solo. Es una oportunidad para conectar contigo mismo y con personas increíbles alrededor del mundo.",
   },
@@ -30,7 +37,7 @@ const blogData = [
     id: 4,
     titulo: "10 cosas que debes saber antes de visitar el Caribe",
     categoria: "Guías",
-    img: "/img/blog04.jpg",
+    img: blog04Img,
     resumen:
       "Playas, clima, actividades y recomendaciones para que vivas un viaje perfecto sin contratiempos.",
   },
@@ -38,7 +45,7 @@ const blogData = [
     id: 5,
     titulo: "Planea tu viaje con bajo presupuesto",
     categoria: "Tips de viaje",
-    img: "/img/blog05.jpg",
+    img: blog05Img,
     resumen:
       "No necesitas gastar tanto para vivir un viaje inolvidable. Aquí te mostramos cómo optimizar tu presupuesto.",
   },
