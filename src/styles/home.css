@@ -11,9 +11,11 @@ body {
   color: #333;
 }
 
-/* -----------------------------------------
-   HEADER
------------------------------------------- */
+/* ============================================================
+   HEADER RESPONSIVE FIX — TravelView
+   ============================================================ */
+
+/* Desktop: queda igual */
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
@@ -22,6 +24,7 @@ body {
   z-index: 10;
 }
 
+/* Ajuste responsivo */
 .container-header {
   width: 90%;
   margin: auto;
@@ -29,10 +32,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;           /* 🔥 permite reorganizar en mobile */
+  gap: 10px;                 /* 🔥 evita que todo se pegue */
 }
 
 .logo {
   height: 60px;
+}
+
+/* Menú desktop */
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -41,11 +53,50 @@ body {
   font-weight: bold;
   color: #333;
   transition: 0.2s;
+  font-size: 15px;
 }
 
 .nav a:hover {
   color: #d42b2b;
 }
+
+/* ============================================================
+   HEADER MOBILE — UX Optimizada (2 columnas)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    gap: 6px;
+  }
+
+  .logo {
+    height: 50px;
+    margin-bottom: 4px;
+  }
+
+  /* ----- NUEVO: menú en dos columnas ----- */
+  .nav {
+    width: 100%;
+    display: grid;                  /* ✔ GRID, no flex */
+    grid-template-columns: repeat(2, 1fr);  /* ✔ 2 COLUMNAS */
+    gap: 6px 10px;                  /* vertical 6px, horizontal 10px */
+    text-align: center;
+    padding: 0 12px;                /* margen interno ligero */
+  }
+
+  .nav a {
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 0;                 /* ✔ altura compacta */
+    line-height: 1.2;
+  }
+}
+
+
+
 
 /* -----------------------------------------
    HERO / BANNER PRINCIPAL
@@ -247,6 +298,24 @@ body {
   text-align: center;
 }
 
+.pregunta {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.pregunta .cta {
+  padding: 14px 24px;
+  font-size: 16px;
+  display: inline-block;
+  z-index: 1;
+}
+
 .cta {
   padding: 12px 20px;
   background: #25d366;
@@ -420,4 +489,73 @@ body {
 
 .btn-limpiar:hover {
   background-color: #c9302c;
+}
+
+
+/* ====== FIX GLOBAL: Footer siempre abajo ====== */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout principal flex vertical */
+.app-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El footer se va al fondo automáticamente */
+.content-wrapper {
+  flex: 1;
+}
+
+
+/* ============================================================
+   BUSCADOR RESPONSIVE — FIX UX PRO
+   ============================================================ */
+@media (max-width: 768px) {
+  .search-container {
+    padding: 20px;
+    width: 92%;
+    margin: auto;
+  }
+
+  .search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;     /* 🔥 2 columnas */
+    gap: 12px;
+  }
+
+  /* Origen y Destino se mantienen en dos columnas */
+  .form-group:nth-child(1),
+  .form-group:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  /* Fechas y Personas bajan a 1 columna */
+  .form-group:nth-child(3),
+  .form-group:nth-child(4),
+  .form-group:nth-child(5) {
+    grid-column: span 2;               /* 🔥 ocupa el ancho completo */
+  }
+
+  /* Botones debajo */
+  .search-buttons,
+  .btns-buscador {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btn-buscar,
+  .btn-limpiar {
+    width: 48%;
+    padding: 12px 0;
+    font-size: 15px;
+    border-radius: 8px;
+  }
 }

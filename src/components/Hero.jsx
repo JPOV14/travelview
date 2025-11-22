@@ -1,9 +1,11 @@
 // src/components/Hero.jsx
+import bannerPrincipal from "../assets/img/banner-principal.jpg";
+
 export default function Hero() {
   return (
     <section className="hero">
       <img
-        src="/img/banner-principal.jpg"
+        src={bannerPrincipal}
         alt="Explora Perú"
         className="hero-img"
       />

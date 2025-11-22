@@ -1,3 +1,13 @@
+// src/components/Footer.jsx
+import minceturImg from "../assets/img/image 6.png";
+import sierraVerdeImg from "../assets/img/image 8.png";
+import libroImg from "../assets/img/image 7.png";
+
+import facebookImg from "../assets/img/facebook.webp";
+import whatsappImg from "../assets/img/whatsapp.webp";
+import xImg from "../assets/img/x.webp";
+import instagramImg from "../assets/img/instagram.webp";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -18,10 +28,10 @@ function Footer() {
           <h3>Certificaciones</h3>
           <div className="certificaciones">
             <a href="https://www.gob.pe/mincetur" target="_blank" rel="noreferrer">
-              <img src="/img/image 6.png" alt="Mincetur" />
+              <img src={minceturImg} alt="Mincetur" />
             </a>
             <a href="https://sierraverdeperu.net/site/index.php/es/protegeme" target="_blank" rel="noreferrer">
-              <img src="/img/image 8.png" alt="Sierra Verde" />
+              <img src={sierraVerdeImg} alt="Sierra Verde" />
             </a>
           </div>
 
@@ -31,24 +41,40 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/img/image 7.png" className="libro-img" alt="Libro" />
+            <img src={libroImg} className="libro-img" alt="Libro" />
           </a>
         </div>
 
         <div className="footer-col">
           <h3>Síguenos</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100063655416499" target="_blank" rel="noreferrer">
-              <img src="/img/facebook.webp" alt="Facebook" />
+            <a
+              href="https://www.facebook.com/profile.php?id=100063655416499"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={facebookImg} alt="Facebook" />
             </a>
-            <a href="https://wa.me/51938540706?text=Hola,%20Bienvenido%20a%20Viajerox%20Travel" target="_blank" rel="noreferrer">
-              <img src="/img/whatsapp.webp" alt="WhatsApp" />
+            <a
+              href="https://wa.me/51938540706?text=Hola,%20Bienvenido%20a%20Viajerox%20Travel"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={whatsappImg} alt="WhatsApp" />
             </a>
-            <a href="https://x.com/TRAVELGROUPERU" target="_blank" rel="noreferrer">
-              <img src="/img/x.webp" alt="X" />
+            <a
+              href="https://x.com/TRAVELGROUPERU"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={xImg} alt="X" />
             </a>
-            <a href="https://www.instagram.com/travel.peru/" target="_blank" rel="noreferrer">
-              <img src="/img/instagram.webp" alt="Instagram" />
+            <a
+              href="https://www.instagram.com/travel.peru/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={instagramImg} alt="Instagram" />
             </a>
           </div>
         </div>

@@ -1,12 +1,16 @@
 // src/components/Header.jsx
 import { Link } from "react-router-dom";
+import logoImg from "../assets/img/LogoVT.png"; // ajusta a .jpg si fuera necesario
 
 export default function Header() {
   return (
     <header className="header">
       <div className="container-header">
-        <img src="/img/LogoVT.png" alt="TravelView" className="logo" />
-        
+        <Link to="/">
+          <img src={logoImg} alt="TravelView" className="logo" />
+        </Link>
+
+
         <nav className="nav">
           <Link to="/quienes-somos">¿Quiénes Somos?</Link>
           <Link to="/paquetes">Paquetes</Link>

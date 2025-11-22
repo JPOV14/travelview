@@ -1,14 +1,19 @@
-import React from "react";
+// src/pages/Paquetes.jsx
 import "./paquetes.css";
 
-// Data simulada (esto vale oro para la rúbrica)
+import cuscoImg from "../assets/img/cusco.jpg";
+import cancunImg from "../assets/img/cancun.jpg";
+import cartagenaImg from "../assets/img/cartagena.jpg";
+import rioImg from "../assets/img/rio.jpg";
+// Si en alguno te marca error, cambia .jpg por .png SOLO en ese import.
+
 const paquetesData = [
   {
     id: 1,
     titulo: "Cusco Imperial",
     precio: 899,
     dias: 4,
-    img: "/img/cusco.jpg",
+    img: cuscoImg,
     descripcion: "Incluye Machu Picchu, city tour y valle sagrado.",
   },
   {
@@ -16,7 +21,7 @@ const paquetesData = [
     titulo: "Cancún All Inclusive",
     precio: 1499,
     dias: 5,
-    img: "/img/cancun.jpg",
+    img: cancunImg,
     descripcion: "Playas, hotel todo incluido y tours acuáticos.",
   },
   {
@@ -24,7 +29,7 @@ const paquetesData = [
     titulo: "Cartagena Histórica",
     precio: 1199,
     dias: 4,
-    img: "/img/cartagena.jpg",
+    img: cartagenaImg,
     descripcion: "Murallas, centro histórico y playas caribeñas.",
   },
   {
@@ -32,7 +37,7 @@ const paquetesData = [
     titulo: "Rio de Janeiro",
     precio: 1099,
     dias: 4,
-    img: "/img/rio.jpg",
+    img: rioImg,
     descripcion: "Cristo Redentor, Pan de Azúcar y Copacabana.",
   },
 ];

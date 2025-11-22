@@ -1,8 +1,13 @@
 // src/components/Destinos.jsx
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import img1 from "../assets/img/image 1.png"; // Paracas
+import img2 from "../assets/img/image 2.png"; // Machu Picchu
+import img3 from "../assets/img/image 3.png"; // Antioquía
+import img4 from "../assets/img/image 4.png"; // Chancay
+import img5 from "../assets/img/image 5.png"; // Tarapoto
 
 export default function Destinos() {
   const settings = {
@@ -17,39 +22,60 @@ export default function Destinos() {
     pauseOnHover: false,
   };
 
+  // Funciones de navegación compatibles con HashRouter + slick
+  const goTo = (ruta) => {
+    window.location.hash = ruta;           // navega dentro del SPA
+    window.scrollTo(0, 0);                // sube al inicio
+  };
+
   return (
     <section className="destinos">
       <h2 className="titulo-destinos">Destinos más buscados</h2>
 
       <Slider {...settings}>
+        {/* PARACAS */}
         <div className="destino-card">
-          <img src="/img/image 1.png" alt="Paracas" />
+          <img src={img1} alt="Paracas" />
           <h3>Paracas</h3>
-          <a href="/pages/Paracas.html" className="btn-ver">Ver más</a>
+          <div className="btn-ver" onClick={() => goTo("#/paracas")}>
+            Ver más
+          </div>
         </div>
 
+        {/* MACHU PICCHU */}
         <div className="destino-card">
-          <img src="/img/image 2.png" alt="Machu Picchu" />
+          <img src={img2} alt="Machu Picchu" />
           <h3>Machu Picchu</h3>
-          <a href="#" className="btn-ver">Ver más</a>
+          <div className="btn-ver" onClick={() => alert("Próximamente disponible")}>
+            Ver más
+          </div>
         </div>
 
+        {/* ANTIOQUIA */}
         <div className="destino-card">
-          <img src="/img/image 3.png" alt="Antioquía" />
+          <img src={img3} alt="Antioquía" />
           <h3>Antioquía</h3>
-          <a href="/pages/Antioquia.html" className="btn-ver">Ver más</a>
+          <div className="btn-ver" onClick={() => goTo("#/antioquia")}>
+            Ver más
+          </div>
         </div>
 
+        {/* CHANCAY */}
         <div className="destino-card">
-          <img src="/img/image 4.png" alt="Chancay" />
+          <img src={img4} alt="Castillo de Chancay" />
           <h3>Castillo de Chancay</h3>
-          <a href="/pages/Chancay.html" className="btn-ver">Ver más</a>
+          <div className="btn-ver" onClick={() => goTo("#/chancay")}>
+            Ver más
+          </div>
         </div>
 
+        {/* TARAPOTO */}
         <div className="destino-card">
-          <img src="/img/image 5.png" alt="Tarapoto" />
+          <img src={img5} alt="Tarapoto" />
           <h3>Tarapoto</h3>
-          <a href="#" className="btn-ver">Ver más</a>
+          <div className="btn-ver" onClick={() => alert("Próximamente disponible")}>
+            Ver más
+          </div>
         </div>
       </Slider>
     </section>
