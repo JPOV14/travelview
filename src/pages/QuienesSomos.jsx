@@ -44,7 +44,7 @@ function QuienesSomos() {
         <div className="nos-grid">
           <div className="nos-card">
             <img src={teamImg1} alt="Miembro del equipo" />
-            <h3>Abel Ochoa (Integrante 1)</h3>
+            <h3>Jesús Abel Ochoa Mendoza</h3>
             <p>
               Coordinador de proyecto, diseño de la experiencia y visión del
               proyecto TravelView.
@@ -53,19 +53,19 @@ function QuienesSomos() {
 
           <div className="nos-card">
             <img src={teamImg2} alt="Miembro del equipo" />
-            <h3>Integrante 2</h3>
+            <h3>David Nestor Piedra Bustamante</h3>
             <p>Desarrollo Frontend, React y estructura del sitio.</p>
           </div>
 
           <div className="nos-card">
             <img src={teamImg3} alt="Miembro del equipo" />
-            <h3>Integrante 3</h3>
+            <h3>Fiorela Clariza Quispe Quispe</h3>
             <p>Contenido visual, redacción, diseño responsivo.</p>
           </div>
 
           <div className="nos-card">
             <img src={teamImg4} alt="Miembro del equipo" />
-            <h3>Integrante 4</h3>
+            <h3>Jhan Carlos Parra Narciso</h3>
             <p>Validación, pruebas funcionales y documentación del proyecto.</p>
           </div>
         </div>
