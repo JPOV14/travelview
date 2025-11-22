@@ -53,7 +53,7 @@ function QuienesSomos() {
 
           <div className="nos-card">
             <img src={teamImg2} alt="Miembro del equipo" />
-            <h3>David Nestor Piedra Bustamante</h3>
+            <h3>David Nestor Piedra Bustamante </h3>
             <p>Desarrollo Frontend, React y estructura del sitio.</p>
           </div>
 
