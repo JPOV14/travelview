@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/travelview/static/css/main.c83be094.css",
-    "main.js": "/travelview/static/js/main.824fa494.js",
+    "main.js": "/travelview/static/js/main.07376d9a.js",
     "static/media/cancun.jpg": "/travelview/static/media/cancun.c0c5522f6dda603ed6ee.jpg",
     "static/media/blog04.jpg": "/travelview/static/media/blog04.713456c2b29f403f19f1.jpg",
     "static/media/Paracasimgprin.png": "/travelview/static/media/Paracasimgprin.9c531bfa2b49508c945b.png",
@@ -49,10 +49,10 @@
     "static/media/slick.woff": "/travelview/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/travelview/index.html",
     "main.c83be094.css.map": "/travelview/static/css/main.c83be094.css.map",
-    "main.824fa494.js.map": "/travelview/static/js/main.824fa494.js.map"
+    "main.07376d9a.js.map": "/travelview/static/js/main.07376d9a.js.map"
   },
   "entrypoints": [
     "static/css/main.c83be094.css",
-    "static/js/main.824fa494.js"
+    "static/js/main.07376d9a.js"
   ]
 }
