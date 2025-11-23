@@ -65,7 +65,7 @@ function QuienesSomos() {
 
           <div className="nos-card">
             <img src={teamImg4} alt="Miembro del equipo" />
-            <h3>Jhan Carlos Parra Narciso</h3>
+            <h3>Jhan Parra Narciso</h3>
             <p>Validación, pruebas funcionales y documentación del proyecto.</p>
           </div>
         </div>
