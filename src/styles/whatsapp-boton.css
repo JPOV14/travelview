@@ -1,0 +1,25 @@
+/* WhatsApp Floating Button */
+.whatsapp-boton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  z-index: 11;
+  height: 80px;
+}
+
+.whatsapp-icono {
+  width: 99px;
+  height: auto;
+  object-fit: contain;
+}
+
+.whatsapp-boton:hover {
+  transform: scale(1.1);
+}

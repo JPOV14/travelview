@@ -12,6 +12,7 @@ import Destinos from "./components/Destinos";
 import Pregunta from "./components/Pregunta";
 import MetodosPago from "./components/MetodosPago";
 import Footer from "./components/Footer";
+import WhatsAppBoton from "./components/WhatsAppBoton";
 import Paracas from "./pages/Paracas";
 import Antioquia from "./pages/Antioquia";
 import Chancay from "./pages/Chancay";
@@ -57,6 +58,7 @@ function App() {
         </div>
 
         <Footer />
+        <WhatsAppBoton />
       </div>
     </Router>
   );
