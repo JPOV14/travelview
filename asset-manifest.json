@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/travelview/static/css/main.c83be094.css",
-    "main.js": "/travelview/static/js/main.824fa494.js",
+    "main.css": "/travelview/static/css/main.f21776cb.css",
+    "main.js": "/travelview/static/js/main.d3462c2d.js",
     "static/media/cancun.jpg": "/travelview/static/media/cancun.c0c5522f6dda603ed6ee.jpg",
     "static/media/blog04.jpg": "/travelview/static/media/blog04.713456c2b29f403f19f1.jpg",
     "static/media/Paracasimgprin.png": "/travelview/static/media/Paracasimgprin.9c531bfa2b49508c945b.png",
@@ -39,6 +39,7 @@
     "static/media/team04.jpg": "/travelview/static/media/team04.82aa44e846aa7021ca34.jpg",
     "static/media/American Express.png": "/travelview/static/media/American Express.6163c7deeae292f6cd08.png",
     "static/media/blog02.jpg": "/travelview/static/media/blog02.1a9245d0773ff192bed2.jpg",
+    "static/media/viajero-whatsapp.png": "/travelview/static/media/viajero-whatsapp.96a73ad9f524bd6870b6.png",
     "static/media/team02.jpg": "/travelview/static/media/team02.95d4c7d89dd5990776b0.jpg",
     "static/media/blog05.jpg": "/travelview/static/media/blog05.22527f2a56a6b0a14b4e.jpg",
     "static/media/image 7.png": "/travelview/static/media/image 7.0af1332be5d4be8b8d0a.png",
@@ -48,11 +49,11 @@
     "static/media/slick.ttf": "/travelview/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/travelview/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/travelview/index.html",
-    "main.c83be094.css.map": "/travelview/static/css/main.c83be094.css.map",
-    "main.824fa494.js.map": "/travelview/static/js/main.824fa494.js.map"
+    "main.f21776cb.css.map": "/travelview/static/css/main.f21776cb.css.map",
+    "main.d3462c2d.js.map": "/travelview/static/js/main.d3462c2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83be094.css",
-    "static/js/main.824fa494.js"
+    "static/css/main.f21776cb.css",
+    "static/js/main.d3462c2d.js"
   ]
 }
